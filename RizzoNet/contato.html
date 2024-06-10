@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizzo Net - Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><img src="images/minilogo.png" alt="Logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section contato">
+        <div class="container contact-form">
+            <h2>Entre em Contato</h2>
+            <p>Estamos aqui para responder a quaisquer perguntas que você possa ter sobre nossos serviços. Entre em contato conosco hoje mesmo!</p>
+            <form action="#" method="POST">
+                <div class="campo">
+                    <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                </div>
+                <div class="campo">
+                    <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                </div>
+                <div class="campo">
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="Seu WhatsApp" required>
+                </div>
+                <div class="campo">
+                    <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2024 Rizzo Net. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <div class="whatsapp-button">
+        <a href="https://wa.me/5561991637600" target="_blank">
+            <img src="images/whatsapp-icon.png" alt="WhatsApp">
+        </a>
+    </div>
+    
+    <script>
+        // Adiciona animação de "pulo" ao botão do WhatsApp quando a página é carregada
+        document.addEventListener('DOMContentLoaded', function() {
+            var whatsappButton = document.querySelector('.whatsapp-button img');
+            whatsappButton.classList.add('bounce');
+        });
+    </script>
+</body>
+</html>
